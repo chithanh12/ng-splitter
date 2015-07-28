@@ -5,6 +5,7 @@ This is a project that create a simple directive to create some basic layout usi
 This is extended from @blackgate project (link: https://github.com/blackgate/bg-splitter).
 
 - Create a basic resizable with a collapsed button splitter as the code below:
+    <quote>
     <div style="height:99%;">
         <div style="height:100%;">
         <bg-splitter orientation="vertical" position="bottom" unit="px">
@@ -15,8 +16,9 @@ This is extended from @blackgate project (link: https://github.com/blackgate/bg-
         </bg-splitter>
         </div>
     </div>
-    
+    </quote>
 - Create a nestest layout using the code as below:
+ <quote>
   <div style="height:99%;">
         <div style="height:100%;">
         <bg-splitter orientation="vertical" position="bottom" unit="px">
@@ -30,3 +32,4 @@ This is extended from @blackgate project (link: https://github.com/blackgate/bg-
         </bg-splitter>
         </div>
     </div>
+</quote>
