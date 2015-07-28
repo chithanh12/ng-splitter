@@ -1,0 +1,147 @@
+﻿body, html {
+  height: 100%;
+}
+body{
+  padding-top: 50px;
+}
+.split-panes 
+{
+  position: relative;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+.split-panes > .split-handler 
+{
+  background: #CCCCCC;
+  border-color: #E7E5E6 1px solid;
+  position: absolute;
+  z-index: 999;
+}
+
+.split-panes > .split-handler > .split-button {
+  color: #315081;
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  background: #CCCCCC;
+  border-color: #E7E5E6 1px solid;
+}
+.split-panes > .split-handler > .split-button > span{
+  
+  font-size: small;
+}
+.split-panes > .split-handler:hover  ,.split-panes > .split-handler > .split-button:hover{
+  background-color: #00a6dd;
+  color: #FFF;
+}
+
+/* Horizontal */ 
+
+.split-panes.horizontal > .split-handler
+{
+  width: 4px;
+  top: 0px; 
+  bottom: 0px;
+  cursor: ew-resize;
+}
+
+.split-panes.horizontal > .split-pane1,
+.split-panes.horizontal > .split-pane2
+{
+  position: absolute;
+  height: 100%;
+}
+.split-panes.horizontal > .split-handler > .split-button > span{
+  left: -2px;
+}
+.split-panes.horizontal > .split-handler > .split-button {
+  top: 49%;
+  height: 40px;
+  width: 10px;
+  padding: 10px 1px;
+}
+
+
+.split-panes.horizontal > .split-handler.left.opened > .split-button{
+  left: -10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.split-panes.horizontal > .split-handler.left.collapsed > .split-button {
+  left: 4px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.split-panes.horizontal > .split-handler.right.opened > .split-button{
+  left: 2px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  
+}
+
+.split-panes.horizontal > .split-handler.right.collapsed > .split-button {
+  left: -10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* Vertical */
+
+.split-panes.vertical > .split-handler
+{
+  height: 4px;
+  left: 0px;
+  right: 0px;
+  cursor: ns-resize;
+  width: 100%;
+  position: absolute;
+}
+
+.split-panes.vertical > .split-pane1,
+.split-panes.vertical > .split-pane2
+{
+  position: absolute;
+  width: 100%;
+}
+.split-panes.vertical > .split-handler > .split-button{
+  height: 10px;
+  width: 40px;
+  cursor: pointer;
+  left: 49%;
+  padding: 1px 12px;
+}
+.split-panes.vertical > .split-handler.top.opened > .split-button{
+  top: -10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.split-panes.vertical > .split-handler.top.collapsed > .split-button{
+  top: 2px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.split-panes.vertical > .split-handler > .split-button > span{
+  top: -4px;
+}
+
+
+
+.split-panes.vertical > .split-handler.bottom.opened > .split-button{
+  top: 2px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.split-panes.vertical > .split-handler.bottom.collapsed > .split-button{
+  top: -8px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.hide{
+  display: none;
+}
+.show{
+  display:inherit;
+}
