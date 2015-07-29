@@ -29,7 +29,7 @@ body{
 }
 .split-panes > .split-handler > .split-button > span{
   
-  font-size: small;
+  font-size: 0.8em;
 }
 .split-panes > .split-handler:hover  ,.split-panes > .split-handler > .split-button:hover{
   background-color: #00a6dd;
@@ -64,26 +64,26 @@ body{
 
 
 .split-panes.horizontal > .split-handler.left.opened > .split-button{
-  left: -10px;
+  left: -6px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
 .split-panes.horizontal > .split-handler.left.collapsed > .split-button {
-  left: 4px;
+  left: 0px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
 .split-panes.horizontal > .split-handler.right.opened > .split-button{
-  left: 2px;
+  left: 0px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   
 }
 
 .split-panes.horizontal > .split-handler.right.collapsed > .split-button {
-  left: -10px;
+  left: -6px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -111,15 +111,15 @@ body{
   width: 40px;
   cursor: pointer;
   left: 49%;
-  padding: 1px 12px;
+  padding: 1px 14px;
 }
 .split-panes.vertical > .split-handler.top.opened > .split-button{
-  top: -10px;
+  top: -8px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 .split-panes.vertical > .split-handler.top.collapsed > .split-button{
-  top: 2px;
+  top: 0px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
@@ -130,12 +130,12 @@ body{
 
 
 .split-panes.vertical > .split-handler.bottom.opened > .split-button{
-  top: 2px;
+  top: 0px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 .split-panes.vertical > .split-handler.bottom.collapsed > .split-button{
-  top: -8px;
+  top: -6px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
